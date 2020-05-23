@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<skipper version="3.2.23.1643" mvc="Laravel" orm="Laravel" name="Timetable" uuid="5fc780b6-6d3b-4540-a407-2613aac4359b">
+  <module name="\login_system" local-name="login_system" namespace="\App\Models" local-namespace="App\Models" export-format="Laravel" export-path="." uuid="cdc67230-4fa2-45ab-b8f0-8ca45da6449d">
+    <entity name="\App\Models\User" local-name="User" namespace="\App\Models" uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9">
+      <field name="idUSers" type="integer" required="true" unique="true" primary="true" auto-increment="true" uuid="66a3f36b-85fe-43d9-ac3c-2d4cbfa56087"/>
+      <field name="uidUSers" type="text" required="true" uuid="affa92cf-275e-4739-aec5-7e9bf2c1cd50"/>
+      <field name="emailUsers" type="text" required="true" uuid="1ecb2f1a-b69e-4b6b-9590-2ebdf3d81ccd"/>
+      <field name="pwdUSers" type="longText" required="true" uuid="49f65373-c66a-4216-a95a-73c548177655"/>
+      <orm-attributes>
+        <attribute name="table">users</attribute>
+      </orm-attributes>
+    </entity>
+    <orm-attributes>
+      <attribute name="migrations-path">database/migrations</attribute>
+    </orm-attributes>
+    <migrations version="1.0">
+      <revision uuid="6dbb7d79-d08f-43bb-82ad-ab270f2ab133" date="2020-05-03 13:16:51.414370" exportable="true">
+        <element action="add" uuid="cdc67230-4fa2-45ab-b8f0-8ca45da6449d" type="module">
+          <property name="export-format" value="Laravel"/>
+          <property name="export-path" value="."/>
+          <property name="local-name" value="login_system"/>
+          <property name="local-namespace" value="App\Models"/>
+          <property name="migrations-path" value="database/migrations"/>
+          <property name="name" value="\login_system"/>
+          <property name="namespace" value="\App\Models"/>
+        </element>
+        <element action="add" uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" parent-uuid="cdc67230-4fa2-45ab-b8f0-8ca45da6449d" type="entity">
+          <property name="local-name" value="User"/>
+          <property name="name" value="\App\Models\User"/>
+          <property name="namespace" value="\App\Models"/>
+          <property name="table" value="users"/>
+        </element>
+        <element action="add" uuid="66a3f36b-85fe-43d9-ac3c-2d4cbfa56087" parent-uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" type="field">
+          <property name="auto-increment" value="true"/>
+          <property name="name" value="idUSers"/>
+          <property name="primary" value="true"/>
+          <property name="required" value="true"/>
+          <property name="type" value="integer"/>
+          <property name="unique" value="true"/>
+        </element>
+        <element action="add" uuid="affa92cf-275e-4739-aec5-7e9bf2c1cd50" parent-uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" sibling-uuid="66a3f36b-85fe-43d9-ac3c-2d4cbfa56087" type="field">
+          <property name="name" value="uidUSers"/>
+          <property name="required" value="true"/>
+          <property name="type" value="text"/>
+        </element>
+        <element action="add" uuid="1ecb2f1a-b69e-4b6b-9590-2ebdf3d81ccd" parent-uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" sibling-uuid="affa92cf-275e-4739-aec5-7e9bf2c1cd50" type="field">
+          <property name="name" value="emailUsers"/>
+          <property name="required" value="true"/>
+          <property name="type" value="text"/>
+        </element>
+        <element action="add" uuid="49f65373-c66a-4216-a95a-73c548177655" parent-uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" sibling-uuid="1ecb2f1a-b69e-4b6b-9590-2ebdf3d81ccd" type="field">
+          <property name="name" value="pwdUSers"/>
+          <property name="required" value="true"/>
+          <property name="type" value="longText"/>
+        </element>
+      </revision>
+    </migrations>
+  </module>
+  <visual-data>
+    <entity uuid="747d64b6-afd0-4e1a-bf94-a909f4c71fb9" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="20" position-y="40" size-x="0" size-x2="110" size-y="0" size-y2="73"/>
+    <module uuid="cdc67230-4fa2-45ab-b8f0-8ca45da6449d" bg-color="#FEFCE8" position-x="50" position-y="50" size-x="0" size-x2="150" size-y="0" size-y2="133"/>
+    <project uuid="5fc780b6-6d3b-4540-a407-2613aac4359b" size-x="0" size-x2="250" size-y="0" size-y2="233"/>
+  </visual-data>
+</skipper>
